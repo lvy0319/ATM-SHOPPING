@@ -60,8 +60,8 @@ if __name__ == '__main__':
                 elif is_sh == 'b':
                     break
                 else:
-                    print('操作编号错误')
+                    print('操作编号错误!')
         elif choice == 'b':
             quit()
         else:
-            print('操作编号错误')
+            print('操作编号错误!')
