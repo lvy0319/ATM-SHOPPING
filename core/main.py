@@ -61,7 +61,7 @@ if __name__ == '__main__':
                     break
                 else:
                     print('操作编号错误!')
-        elif choice == 'b':
+        elif choice == 'q':
             quit()
         else:
             print('操作编号错误!')
