@@ -16,7 +16,7 @@
 import os,sys
 #主程序入口
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + os.sep
 
 sys.path.append(BASE_DIR)
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
         1.管理后台
         2.购物流程
         ''')
-        choice = input('请输入操作编号')
+        choice = input('请输入操作编号:')
         if choice == '1':
             while True:
                 is_ad = input('请输入对应操作，1.创建用户 2，锁定用户 3.解锁用户 b.返回：')

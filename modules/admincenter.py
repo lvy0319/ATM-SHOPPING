@@ -3,10 +3,10 @@
 import os,json
 
 #获取当前项目目录
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + os.sep
 #封装数据文件路径
-__db_users_dict = BASE_DIR +'\\database\\users_dict'
-__creditcard_dict = BASE_DIR +'\\database\\creditcard_dict'
+__db_users_dict = BASE_DIR +  "database" + os.sep + "users_dict"
+__creditcard_dict = BASE_DIR + "database" + os.sep + "creditcard_dict"
 
 def User_create(address='None',creditcard=0,locked=0):
     #创建用户

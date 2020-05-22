@@ -4,13 +4,13 @@
 import json,os,time
 
 #获取程序路径
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + os.sep
 
-#封装数据路径
-__db_product = BASE_DIR + r"\database\product_list"
-__db_shoping_car = BASE_DIR + r"\database\shopping_car"
-__db_users_dict = BASE_DIR + r"\database\users_dict"
-__db_creditcard_dict = BASE_DIR + r"\database\creditcard_dict"
+#封装数据路径   os.sep返回当前系统的目录斜杠 用作兼容不同系统
+__db_product = BASE_DIR  + "database" + os.sep + "product_list"
+__db_shoping_car = BASE_DIR + "database" + os.sep + "shopping_car"
+__db_users_dict = BASE_DIR + "database" + os.sep + "users_dict"
+__db_creditcard_dict = BASE_DIR + "database" + os.sep + "creditcard_dict"
 
 def Fetch():
     pro_list= []
